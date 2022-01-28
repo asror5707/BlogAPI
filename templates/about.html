@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'bootstrap-5.0.2-dist/css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'css/about.css' %}">
+    <title>About</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row navbar">
+            <div class="col-12 col-md-6 col-sm-6 navbar-icon"><a href="/">Azimjon's Blog</a></div>
+            <div class="col-12 col-md-6 col-sm-6 navbar-link">
+                <div><a href="/about/">About</a></div>
+                <div><a href="/blog/">Blog</a></div>
+                <div><a href="/maqola/">Channel</a></div>
+            </div>
+        </div>
+        <div class="row aboutme">
+            <div class="col-12">
+                <h1>About me</h1>
+            </div>
+        </div>
+        <div class="row main">
+            <div class="col-12">
+                <p>I am Asrorbek Xursanaliyev, a 19-year-old <b>Software Engineer</b> from Pop district of Namangan region , Uzbekistan, currently living in Fergana region.
+                    <br>
+                    <br>
+                    After graduating from the 11th grade, I entered the Fergana branch of the Tashkent University of Information Technologies.</p>
+                    <img src=" {% static 'about/tatu.jpg'%}" alt="">
+                    <h5><strong>Web developer</strong></h5>
+                    <p>I have just learned to write backend from web programming in python programming language, and I know MySQL, PostgreSQL and SQLite from the database and now I am learning front end direction and I want to work as a full stack web programmer in the future</p>
+                    <img src=" {% static 'about/1.jpg'%}" alt="">
+                    <h5><strong>Python Programming lenguage</strong></h5>
+                    <p>I chose and learned python programming language among programming languages ​​because python programming language is not difficult to learn simple and straightforward and is currently one of the leading programming languages</p>
+                    <img src=" {% static 'about/python.png'%}" alt="">
+                    <h5>Abount me</h5>
+                    <p>In short, I am Asrorbek, a friendly Uzbek programmer. You can read my story about becoming a web programmer.</p>
+
+            </div>
+        </div>
+        <div class="footer">
+            <p>© 2021 Khursanaliyev.com</p>
+        </div>
+    </div>
+</body>
+</html>

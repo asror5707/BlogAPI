@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+        <h1>Bu yerda Register qlasiz</h1>
+        <form action="{% url 'reg' %}" method="post">{% csrf_token %}
+         <b>Введите логин: </b><input type="text" name="login" placeholder="Login"/>
+        <br>
+        <br>
+        <b>Введите парол: </b><input type="password" name="parol" placeholder="Parol"/>
+        <br>
+        <ul>
+            <li>Ваш пароль не может быть слишком похож на вашу другую личную информацию.</li>
+            <li>Ваш пароль должен содержать не менее 8 символов.</li>
+            <li>Ваш пароль не может быть обычным паролем.</li>
+            <li>Ваш пароль не может быть полностью числовым.</li>
+        </ul>
+        <br>
+        <b>Введите парол снова: </b><input type="password" name="parol" placeholder="Parolni tasdiqlang"/>
+        <br>
+        <br>
+        <a href="/logout/"><button type="submit">Kirish</button></a>
+    </form>
+
+</body>
+</html>
